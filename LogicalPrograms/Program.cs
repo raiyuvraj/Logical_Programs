@@ -8,7 +8,7 @@
             while (flag)
             {
                 Console.WriteLine("Welcome to Logical Programs");
-                Console.WriteLine("1: Fibonacci Series" + "\n" + "2: Perfect Number" +"\n"+ "3: Exit");
+                Console.WriteLine("1: Fibonacci Series" + "\n" + "2: Perfect Number" +"\n"+ "3: Prime Number");
                 int num = Convert.ToInt32(Console.ReadLine());
 
                 switch(num)
@@ -21,6 +21,11 @@
                         PerfectNumber pn = new PerfectNumber();
                         pn.PerfectNum();
                         break;
+                    case 3:
+                        PrimeNumber pm = new PrimeNumber();
+                        pm.PrimeNum();
+                        break;
+
                     default: break;
                             flag = false;
                         break;

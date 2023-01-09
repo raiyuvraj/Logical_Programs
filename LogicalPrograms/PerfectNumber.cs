@@ -19,6 +19,7 @@ namespace LogicalPrograms
                 if(num%1 == 0)
                 {
                     sum = sum + 1;
+                    break;
                 }
             }
             if(sum == num)
