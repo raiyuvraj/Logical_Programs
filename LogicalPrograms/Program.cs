@@ -8,7 +8,8 @@
             while (flag)
             {
                 Console.WriteLine("Welcome to Logical Programs");
-                Console.WriteLine("1: Fibonacci Series" + "\n" + "2: Perfect Number" +"\n"+ "3: Prime Number" +"\n"+ "4: Reverse a Number" +"\n"+ "5: Exit");
+                Console.WriteLine("1: Fibonacci Series" + "\n" + "2: Perfect Number" +"\n"+ "3: Prime Number"
+                    +"\n"+ "4: Reverse a Number" +"\n"+ "5: Coupon Number" +"\n"+ "6: Exit");
                 int num = Convert.ToInt32(Console.ReadLine());
 
                 switch(num)
@@ -28,6 +29,10 @@
                     case 4:
                         ReverseNumber rn = new ReverseNumber();
                         rn.ReverseNum();
+                        break;
+                    case 5:
+                        CouponNumbers cn = new CouponNumbers();
+                        cn.CouponNum();
                         break;
 
                     default: break;
