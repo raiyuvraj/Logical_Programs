@@ -9,7 +9,7 @@
             {
                 Console.WriteLine("Welcome to Logical Programs");
                 Console.WriteLine("1: Fibonacci Series" + "\n" + "2: Perfect Number" +"\n"+ "3: Prime Number"
-                    +"\n"+ "4: Reverse a Number" +"\n"+ "5: Coupon Number" +"\n"+ "6: Exit");
+                    +"\n"+ "4: Reverse a Number" +"\n"+ "5: Coupon Number" +"\n"+ "6: Stop Watch" +"\n"+ "7: Exit ");
                 int num = Convert.ToInt32(Console.ReadLine());
 
                 switch(num)
@@ -33,6 +33,10 @@
                     case 5:
                         CouponNumbers cn = new CouponNumbers();
                         cn.CouponNum();
+                        break;
+                    case 6:
+                        StopWatch sw = new StopWatch();
+                        sw.Watch();
                         break;
 
                     default: break;
